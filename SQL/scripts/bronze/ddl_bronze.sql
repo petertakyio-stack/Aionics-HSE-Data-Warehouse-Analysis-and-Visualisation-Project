@@ -165,7 +165,7 @@ CREATE TABLE bronze.work_activities (
     activity_name VARCHAR(80),
     work_type VARCHAR(80),
     shift VARCHAR(80),
-    permit_reequired VARCHAR(80),
+    permit_required VARCHAR(80),
     high_risk_activity VARCHAR(80),
     risk_level VARCHAR(80)
 );
