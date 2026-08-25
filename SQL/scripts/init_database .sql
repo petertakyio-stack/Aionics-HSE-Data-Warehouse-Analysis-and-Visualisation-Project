@@ -30,7 +30,8 @@ END;
 GO
 
 -- Create database
-CREATE DATABASE AionicsDataWarehouse;
+CREATE DATABASE AionicsDataWarehouse
+COLLATE Latin1_General_100_CS_AS -- to enable users to see case insensitivities
 GO
 
 USE AionicsDataWarehouse;
