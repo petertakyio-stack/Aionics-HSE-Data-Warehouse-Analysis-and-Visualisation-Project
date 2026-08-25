@@ -5,6 +5,7 @@
 This project transforms a fictional Health, Safety, and Environment (HSE) operational dataset from **Aionics Solutions, Ghana** into a structured, analytics-ready data warehouse using SQL Server and a layered data architecture.
 
 The project demonstrates an end-to-end data engineering workflow, including:
+
 - Extracting HSE data from CSV source files
 - Loading raw source data into a Bronze layer
 - Cleaning and standardising data in a Silver layer
@@ -25,19 +26,25 @@ The project was developed as part of my data engineering portfolio to demonstrat
 The warehouse follows a three-layer **Medallion Architecture**.
 
 <p align="center">
-  <img width="1200" alt="Aionics HSE Data Architecture" src="docs/images/aionics_data_architecture.png" />
+  <img width="1200"
+       alt="Aionics HSE Data Architecture"
+       src="https://github.com/petertakyio-stack/Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project/blob/main/SQL/docs/aionics_data_architecture..png?raw=true" />
   <br>
   <em>Figure 1: End-to-end HSE data architecture from source files through the Bronze, Silver, and Gold layers to BI and analytics consumers.</em>
 </p>
 
 <p align="center">
-  <img width="1100" alt="Aionics HSE Data Flow" src="docs/images/aionics_data_flow.png" />
+  <img width="1100"
+       alt="Aionics HSE Data Flow"
+       src="https://github.com/petertakyio-stack/Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project/blob/main/SQL/docs/aionics_data_flow.png?raw=true" />
   <br>
   <em>Figure 2: HSE data flow showing the source-aligned Bronze layer, cleansed Silver layer, and analytical Gold layer.</em>
 </p>
 
 <p align="center">
-  <img width="1100" alt="Aionics HSE Data Integration Model" src="docs/images/aionics_data_integration.png" />
+  <img width="1100"
+       alt="Aionics HSE Data Integration Model"
+       src="https://github.com/petertakyio-stack/Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project/blob/main/SQL/docs/aionics_data_integration.png?raw=true" />
   <br>
   <em>Figure 3: Source data integration model showing how event records connect to calendar, personnel, equipment, sites, causes, and work activities.</em>
 </p>
@@ -47,6 +54,7 @@ The warehouse follows a three-layer **Medallion Architecture**.
 Stores raw or near-raw HSE source data. The Bronze layer creates source-aligned tables, reloads CSV files using `BULK INSERT`, preserves original values, tracks load duration, and captures load errors.
 
 The Bronze layer contains:
+
 - `bronze.event_records`
 - `bronze.calendar`
 - `bronze.cause_reference`
@@ -60,6 +68,7 @@ The Bronze layer contains:
 Cleans and standardises Bronze data before analytical use.
 
 Major transformations include:
+
 - Standardising multiple event-date formats
 - Excluding event records with invalid dates
 - Rebuilding consistent HSE event IDs
@@ -93,7 +102,9 @@ All Gold-layer objects are implemented as **SQL views** rather than physical tab
 ## Gold Layer - HSE Data Model
 
 <p align="center">
-  <img width="1100" alt="Aionics HSE Gold Star Schema" src="docs/images/aionics_data_model.png" />
+  <img width="1100"
+       alt="Aionics HSE Gold Star Schema"
+       src="https://github.com/petertakyio-stack/Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project/blob/main/SQL/docs/aionics_data_model.png?raw=true" />
   <br>
   <em>Figure 4: Gold-layer dimensional model linking the HSE event fact view to calendar, personnel, equipment, sites, work-activity, and cause-reference dimensions.</em>
 </p>
@@ -101,6 +112,7 @@ All Gold-layer objects are implemented as **SQL views** rather than physical tab
 **Fact-view grain:** One row represents one HSE event record.
 
 ### Dimension Views
+
 - `gold.dim_calendar`
 - `gold.dim_cause_reference`
 - `gold.dim_equipment`
@@ -109,9 +121,11 @@ All Gold-layer objects are implemented as **SQL views** rather than physical tab
 - `gold.dim_work_activities`
 
 ### Fact View
+
 - `gold.fact_event_records`
 
 ### Key Features
+
 - CSV loading with `BULK INSERT`
 - Bronze and Silver ETL stored procedures
 - Data cleansing and standardisation
@@ -149,6 +163,7 @@ All Gold-layer objects are implemented as **SQL views** rather than physical tab
 The project validates data at both Silver and Gold layers.
 
 ### Silver Layer Checks
+
 - Duplicate and NULL primary keys
 - Invalid or inconsistent dates
 - Event-ID format and consistency
@@ -167,6 +182,7 @@ The project validates data at both Silver and Gold layers.
 - Work-activity category and Yes/No standardisation
 
 ### Gold Layer Checks
+
 - Duplicate dimension keys
 - Duplicate calendar business keys
 - Duplicate event keys or event IDs
@@ -191,7 +207,6 @@ The project validates data at both Silver and Gold layers.
 
 ---
 
-## Skills Demonstrated
 ## Skills & Technologies
 
 <p align="left">
@@ -230,6 +245,7 @@ The Gold layer provides an analytics-ready HSE star schema that can be connected
 | **High-Severity Events** | Number of events falling within higher severity classifications |
 
 ### Critical Business Questions
+
 - Which operating sites record the highest number of HSE events?
 - Which sites have the highest recordable-event counts?
 - Which work activities are most frequently associated with incidents?
@@ -253,6 +269,7 @@ The Gold layer provides an analytics-ready HSE star schema that can be connected
 ## Data Catalog
 
 A Gold-layer data catalog is maintained to document:
+
 - View names and purposes
 - Grain of each dimension and fact view
 - Column definitions
@@ -265,34 +282,33 @@ A Gold-layer data catalog is maintained to document:
 ## Project Structure
 
 ```text
-Aionics-HSE-Data-Warehouse/
+Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project/
 │
-├── datasets/
-│   ├── calendar.csv
-│   ├── cause_reference.csv
-│   ├── equipment.csv
-│   ├── event_records.csv
-│   ├── personnel.csv
-│   ├── sites.csv
-│   └── work_activities.csv
-│
-├── scripts/
-│   ├── 01_database_setup.sql
-│   ├── 02_bronze_ddl.sql
-│   ├── 03_bronze_load.sql
-│   ├── 04_silver_ddl.sql
-│   ├── 05_silver_load.sql
-│   ├── 06_silver_quality_checks.sql
-│   ├── 07_gold_views.sql
-│   └── 08_gold_quality_checks.sql
-│
-├── docs/
-│   ├── HSE_Gold_Layer_Data_Catalog.docx
-│   └── images/
-│       ├── aionics_data_architecture.png
-│       ├── aionics_data_flow.png
-│       ├── aionics_data_integration.png
-│       └── aionics_data_model.png
+├── SQL/
+│   ├── docs/
+│   │   ├── aionics_data_architecture..png
+│   │   ├── aionics_data_flow.png
+│   │   ├── aionics_data_integration.png
+│   │   └── aionics_data_model.png
+│   │
+│   ├── scripts/
+│   │   ├── 01_database_setup.sql
+│   │   ├── 02_bronze_ddl.sql
+│   │   ├── 03_bronze_load.sql
+│   │   ├── 04_silver_ddl.sql
+│   │   ├── 05_silver_load.sql
+│   │   ├── 06_silver_quality_checks.sql
+│   │   ├── 07_gold_views.sql
+│   │   └── 08_gold_quality_checks.sql
+│   │
+│   └── datasets/
+│       ├── calendar.csv
+│       ├── cause_reference.csv
+│       ├── equipment.csv
+│       ├── event_records.csv
+│       ├── personnel.csv
+│       ├── sites.csv
+│       └── work_activities.csv
 │
 ├── README.md
 └── LICENSE
@@ -302,15 +318,15 @@ Aionics-HSE-Data-Warehouse/
 
 ### 👨🏽‍💻 About Me
 
-Hi, I’m **Peter Takyi Ohemeng** — a **petroleum engineer and environmental management professional** building strong expertise in **data analytics, business intelligence, and data engineering**.
+Hi, I’m **Peter Takyi Ohemeng** — a **petroleum engineer and environmental management professional** building strong expertise in **data analytics, business intelligence, data engineering, and HSE analytics**.
 
-🌍 I aspire to become an **environmental data analyst**, using data to identify environmental risks, improve operational performance, and support smarter decision-making across the energy and extractive industries.
+🌍 I aspire to become an **HSE data and analytics expert**, using data to identify health, safety, and environmental risks, improve operational performance, strengthen compliance, and support better decision-making across the energy and extractive industries.
 
-⚙️ I am particularly interested in finding the right balance between resource development and environmental responsibility. My long-term goal is to help organisations derive the safest and fullest possible benefits from extractive activities while protecting the environment and the communities that depend on it.
+⚙️ I am particularly interested in applying data to areas such as **incident analysis, occupational health, process safety, environmental performance, operational risk, regulatory compliance, and HSE performance management**. My long-term goal is to help organisations use reliable data and analytics to reduce risk, prevent incidents, protect workers and communities, improve environmental performance, and operate more safely and sustainably.
 
-📊 Through projects like this, I am developing practical skills in **SQL, data warehousing, dimensional modelling, ETL development, data-quality testing, and analytics reporting** — transforming raw operational data into reliable insights that support better safety, business, and environmental decisions.
+📊 Through projects like this, I am developing practical skills in **SQL, data warehousing, dimensional modelling, ETL development, data-quality testing, business intelligence, and HSE analytics** — transforming operational data into reliable insights that support safer and more effective decision-making.
 
-> 🌱 **My mission:** To combine engineering knowledge, environmental awareness, and data-driven insights to contribute to a safer, smarter, and more sustainable future.
+> 🌱 **My mission:** To combine engineering knowledge, HSE expertise, and data-driven insights to contribute to safer operations, healthier workplaces, stronger environmental performance, and a more sustainable future.
 
 ---
 
