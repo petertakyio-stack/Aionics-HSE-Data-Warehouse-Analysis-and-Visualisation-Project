@@ -1,0 +1,61 @@
+activity_id,activity_category,activity_name,work_type,shift,permit_required,high_risk_activity_flag,risk_level
+1,Process Operations,Routine Process Monitoring,Routine,Day,No,No,Low
+2,Process Operations,Routine Process Monitoring,Routine,Night,no,No,Low
+3,Process Operations,Line Breaking,Non-Routine,Day,Yes,Yes,High
+4,Process Operations,Line Breaking,Non-Routine,Night,Yes,Yes,High
+5,Maintenance,Mechanical Maintenance,Non-Routine,Day,Yes,Yes,High
+6,Maintenance,Mechanical Maintenance,Non-Routine,Night,Yes,Yes,High
+7,Maintenance,Electrical Maintenance,Non-Routine,Day,Yes,Yes,High
+8,maintenance,Electrical Maintenance,Non-Routine,Night,Yes,Yes,High
+9,Maintenance,Instrumentation Work,Non-Routine,Day,Yes,No,Medium
+10,Maintenance,Instrumentation Work,Non-Routine,Night,Yes,No,Medium
+11,Hot Work,Welding and Cutting,Non-Routine,Day,Yes,Yes,High
+12,Hot Work,Welding and Cutting,Non-Routine,Night,Yes,Yes,High
+13,Confined Space,Confined Space Entry,Non-Routine,Day,Yes,Yes,High
+14,Confined Space,Confined Space Entry,Non-Routine,Night,yes,Yes,High
+15,Working at Height,Scaffolding / Work at Height,Non-Routine,Day,Yes,Yes,High
+16,Working at Height,Scaffolding / Work at Height,Non-Routine,Night,Yes,Yes,High
+17,Lifting,Crane and Lifting Operations,Routine,Day,Yes,YES,High
+18,Lifting,Crane and Lifting Operations,Routine,Night,Yes,Yes,High
+19,Drilling,Drilling Operations,Routine,Day,Yes,Yes,High
+20,Drilling,Drilling Operations,Routine,Night,Yes,Yes,High
+21,Drilling,Well Intervention,Non-Routine,Day,Yes,Yes,High
+22,Drilling,Well Intervention,Non-Routine,Night,Yes,Yes,High
+23,Marine,Vessel Transfer,Routine,Day,Yes,Yes,High
+24,Marine,Vessel Transfer,Routine,Night,Yes,Yes,High
+25,Marine,Mooring Operations,Routine,Day,Yes,Yes,High
+26,Marine,Mooring Operations,Routine,Night,Yes,Yes,High
+27,Logistics,Road Transport,Routine,Day,No,Yes,High
+28,Logistics,Road Transport,Routine,Night,No,Yes,High
+29,Logistics,Forklift Operation,Routine,Day,No,Yes,Medium
+30,logistics,Forklift Operation,Routine,Night,No,Yes,Medium
+31,Warehouse,Material Handling,Routine,Day,No,NO,Medium
+32,Warehouse,Material Handling,Routine,Night,No,No,Medium
+33,Chemical,Chemical Handling,Routine,Day,Yes,YES,High
+34,chemical,Chemical Handling,Routine,Night,Yes,Yes,High
+35,Environmental,Waste Handling,Routine,Day,no,No,Medium
+36,Environmental,Waste Handling,Routine,Night,No,No,Medium
+37,Environmental,Sampling and Monitoring,Routine,Day,No,No,Low
+38,Environmental,Sampling and Monitoring,Routine,Night,No,No,Low
+39,Pipeline,Pipeline Pigging,Non-Routine,Day,Yes,YES,High
+40,Pipeline,Pipeline Pigging,Non-Routine,Night,Yes,Yes,High
+41,Pipeline,Pipeline Patrol,Routine,Day,No,No,Medium
+42,Pipeline,Pipeline Patrol,Routine,Night,No,No,Medium
+43,Tank Operations,Tank Cleaning,Non-Routine,Day,Yes,Yes,High
+44,Tank Operations,Tank Cleaning,Non-Routine,Night,Yes,Yes,High
+45,pressure systems,Pressure Testing,Non-Routine,Day,Yes,Yes,High
+46,pressure systems,Pressure Testing,Non-Routine,Night,Yes,Yes,High
+47,Construction,Excavation,Non-Routine,Day,Yes,Yes,High
+48,Construction,Excavation,Non-Routine,Night,Yes,Yes,High
+49,Construction,Civil Construction,Routine,Day,Yes,Yes,Medium
+50,Construction,Civil Construction,Routine,Night,Yes,Yes,Medium
+51,Inspection,NDT / Equipment Inspection,Routine,Day,Yes,No,Medium
+52,Inspection,NDT / Equipment Inspection,Routine,Night,Yes,No,Medium
+53,Laboratory,Laboratory Analysis,Routine,Day,No,No,Low
+54,Laboratory,Laboratory Analysis,Routine,Night,No,No,Low
+55,Emergency Response,Emergency Drill / Response,Non-Routine,Day,no,Yes,High
+56,Emergency Response,Emergency Drill / Response,Non-Routine,Night,No,Yes,High
+57,Office,Office / Administrative Work,Routine,Day,No,No,Low
+58,Office,Office / Administrative Work,Routine,Night,No,No,Low
+59,Security,Security Patrol,Routine,Day,No,No,Low
+60,Security,Security Patrol,Routine,Night,No,No,Low

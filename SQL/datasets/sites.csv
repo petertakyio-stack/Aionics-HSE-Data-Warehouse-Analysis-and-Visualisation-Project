@@ -1,0 +1,13 @@
+site_id,site_code,site_name,country,region,facility_type,operation_type,risk_classification
+1,GH-OFF-01,Deepwater Alpha FPSO,Ghana,Western Offshore,FPSO,Offshore Production,High
+2,GH-OFF-02,Deepwater Bravo Platform,Ghana,Western Offshore,Fixed Platform,Offshore Production,high
+3,GH-GAS-01,Western Gas Processing Plant,Ghana,Western Region,Gas Plant,Gas Processing,High
+4,GH-TERM-01,Coastal Crude Terminal,Ghana, western region ,Terminal,Storage & Export,Medium
+5,GH-BASE-01,Takoradi Marine Supply Base,Ghana,Western Region,Marine Base,Logistics,Medium
+6,GH-PIPE-01,Eastern Pipeline Station,Ghana,Greater Accra,Pipeline Station,Pipeline Operations,Medium
+7,NG-DRL-01,Delta Drilling Site,Nigeria,Niger Delta,Drilling Site,Drilling,High
+8,NG-GAS-01,Delta Gas Compression Hub,Nigeria,Niger Delta,Compression Station,Gas Operations,High
+9,CI-OFF-01,Lagoon Offshore Production Unit,Côte d'Ivoire,Abidjan Offshore,Offshore Platform,Offshore Production,High
+10,CI-TERM-01,Abidjan Product Terminal,Côte d'Ivoire, abidjan ,Terminal,Storage & Distribution,Medium
+11,GH-WKS-01,Central Engineering Workshop,Ghana,Greater Accra,Workshop,Maintenance,medium
+12,GH-HQ-01,Corporate Technical Centre,Ghana,Greater Accra,Office,Corporate & Engineering,Low

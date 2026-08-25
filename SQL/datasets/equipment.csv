@@ -1,0 +1,602 @@
+equipment_id,asset_id,asset_type,criticality,install_year,asset_age_years,maintenance_status,inspection_status,home_site_id
+0,UNKNOWN,Unknown,Unknown,0,0,Unknown,Unknown,Unknown
+1,AST-10-00001,Pressure Vessel,B - Important,1999,27,Monitor,In Date,10
+2,AST-01-00002,Diesel Generator,B - Important,2003,23,Good,Due within 30 days,1
+3,AST-06-00003,Diesel Generator,C - General,2021,5,Good,In Date,6
+4,AST-11-00004,Separator,C - General,2004,22,Monitor,Overdue,11
+5,AST-06-00005,Heat Exchanger,B - Important,2026,0,Monitor,In Date,6
+6,AST-09-00006,Crane,B - Important,2008,18,Maintenance Due,In Date,9
+7,AST-04-00007,Gas Detector,C - General,2000,26,Overdue,Due within 30 days,4
+8,AST-04-00008,Pipeline Segment,C - General,2006,20,Overdue,In Date,4
+9,AST-02-00009,Heat Exchanger,B - Important,2014,12,Overdue,Overdue,2
+10,AST-06-00010,Heat Exchanger,B - Important,2014,12,Good,Due within 30 days,6
+11,AST-03-00011,Heat Exchanger,C - General,2012,14,Good,In Date,3
+12,AST-10-00012,Separator,B - Important,1998,28,Monitor,In Date,10
+13,AST-11-00013,Forklift,A - Critical,2002,24,Good,In Date,11
+14,AST-06-00014,Pipeline Segment,C - General,2003,23,Good,In Date,6
+15,AST-07-00015,Pressure Vessel,C - General,2000,26,Overdue,In Date,7
+16,AST-10-00016,Pipeline Segment,A - Critical,2009,17,Good,In Date,10
+17,AST-10-00017,Heat Exchanger,B - Important,2019,7,Maintenance Due,Overdue,10
+18,AST-05-00018,Crane,B - Important,2012,14,Good,In Date,5
+19,AST-07-00019,Forklift,C - General,2016,10,Monitor,In Date,7
+20,AST-02-00020,Heat Exchanger,C - General,2007,19,good,In Date,2
+21,AST-11-00021,Centrifugal Pump,B - Important,2009,17,Good, Due within 30 days ,11
+22,AST-02-00022,Gas Detector,B - Important,2011,15,Maintenance Due,In Date,2
+23,AST-10-00023,Diesel Generator,C - General,2022,4,Good,In Date,10
+24,AST-01-00024,Gas Detector,B - Important,2018,8,Good,In Date,1
+25,AST-05-00025,Firewater Pump,B - Important,2014,12,Good,In Date,5
+26,AST-05-00026,Truck,A - Critical,1999,27,Good,In Date,5
+27,AST-07-00027,Control Valve,B - Important,2007,19,Overdue,Not Applicable,7
+28,AST-06-00028,Centrifugal Pump,B - Important,2009,17,Good,In Date,6
+29,AST-01-00029,Pipeline Segment,B - Important,2009,17,Overdue,Overdue,1
+30,AST-02-00030,Gas Detector,B - Important,2013,13,Good,In Date,2
+31,AST-01-00031,Forklift,B - Important,2009,17,Good,Due within 30 days,1
+32,AST-04-00032,Crane,A - Critical,2015,11,Good,Overdue,4
+33,AST-03-00033,Separator,A - Critical,2013,13,Good,Not Applicable,3
+34,AST-06-00034,Diesel Generator,A - Critical,2024,2,Monitor,In Date,6
+35,AST-03-00035,Control Valve,B - Important,2009,17,Monitor,Due within 30 days,3
+36,AST-02-00036,Forklift,C - General,2022,4,Overdue,In Date,2
+37,AST-11-00037,Centrifugal Pump,B - Important,2014,12,Good,In Date,11
+38,AST-08-00038,Control Valve,B - Important,2024,2,Good,In Date,8
+39,AST-03-00039,Forklift,B - Important,2026,0,Good,In Date,3
+40,AST-11-00040,Separator,C - General,2013,13,Overdue,Overdue,11
+41,AST-07-00041,Forklift,B - Important,2018,8,Good,In Date,7
+42,AST-11-00042,Storage Tank,B - Important,2013,13,Good,Overdue,11
+43,AST-01-00043,Separator,C - General,1999,27,Monitor,In Date,1
+44,AST-10-00044,Compressor,B - Important,2012,14,Good,In Date,10
+45,AST-04-00045,Crane,C - General,2019,7,Monitor,In Date,4
+46,AST-08-00046,Storage Tank,A - Critical,1998,28,Maintenance Due,In Date,8
+47,AST-09-00047,Forklift,C - General,2011,15,Good,In Date,9
+48,AST-03-00048,Centrifugal Pump,C - General,2008,18,Overdue,Overdue,3
+49,AST-07-00049,Diesel Generator,A - Critical,2024,2,Good,Overdue,7
+50,AST-05-00050,Centrifugal Pump,C - General,2012,14,Overdue,In Date,5
+51,AST-08-00051,Heat Exchanger,B - Important,2013,13,Good,Due within 30 days,8
+52,AST-04-00052,Control Valve,B - Important,1998,28,Maintenance Due,In Date,4
+53,AST-08-00053,Heat Exchanger,C - General,2022,4,Good,In Date,8
+54,AST-01-00054,Crane,A - Critical,2002,24,Overdue,Overdue,1
+55,AST-05-00055,Diesel Generator,C - General,2007,19,Good,In Date,5
+56,AST-04-00056,Compressor,C - General,2023,3,Good,Not Applicable,4
+57,AST-09-00057,Crane,A - Critical,2005,21,Good,Due within 30 days,9
+58,AST-02-00058,Firewater Pump,B - Important,1999,27,Monitor,In Date,2
+59,AST-09-00059,Compressor,A - Critical,2019,7,Monitor,Overdue,9
+60,AST-08-00060,Pipeline Segment,B - Important,2022,4,Good,In Date,8
+61,AST-01-00061,Pipeline Segment,A - Critical,2008,18,Overdue,Not Applicable,1
+62,AST-09-00062,Pipeline Segment,B - Important,2013,13,Good,Overdue,9
+63,AST-01-00063,Centrifugal Pump,A - Critical,2005,21,Overdue,In Date,1
+64,AST-02-00064,Electrical Switchgear,A - Critical,1999,27,Good,In Date,2
+65,AST-05-00065,Pressure Vessel,B - Important,2014,12,Good,In Date,5
+66,AST-10-00066,Control Valve,B - Important,2018,8,Good,Not Applicable,10
+67,AST-01-00067,Heat Exchanger,B - Important,2021,5,Good,Due within 30 days,1
+68,AST-11-00068,Truck,C - General,2012,14,good,In Date,11
+69,AST-05-00069,Pipeline Segment,C - General,2026,0,Good,In Date,5
+70,AST-06-00070,Electrical Switchgear,B - Important,2025,1,Good,Not Applicable,6
+71,AST-03-00071,Forklift,B - Important,2019,7,Good,Due within 30 days,3
+72,AST-05-00072,Crane,C - General,2023,3,Monitor,In Date,5
+73,AST-01-00073,Crane,A - Critical,2004,22,Overdue,Overdue,1
+74,AST-11-00074,Pressure Vessel,A - Critical,2002,24,Good,In Date,11
+75,AST-07-00075,Heat Exchanger,B - Important,2021,5,Good,In Date,7
+76,AST-07-00076,Gas Detector,A - Critical,2009,17,Monitor,Overdue,7
+77,AST-06-00077,Forklift,B - Important,2020,6,Good,In Date,6
+78,AST-03-00078,Crane,B - Important,2014,12,Overdue,Overdue,3
+79,AST-01-00079,Pipeline Segment,A - Critical,2004,22,good,In Date,1
+80,AST-01-00080,Separator,C - General,2021,5,Maintenance Due,In Date,1
+81,AST-10-00081,Pressure Vessel,A - Critical,2016,10,Good, In Date ,10
+82,AST-11-00082,Centrifugal Pump,B - Important,2002,24,good,In Date,11
+83,AST-10-00083,Firewater Pump,C - General,2000,26,Good,In Date,10
+84,AST-11-00084,Forklift,A - Critical,2005,21,Good,In Date,11
+85,AST-09-00085,Control Valve,B - Important,2005,21,Good,In Date,9
+86,AST-08-00086,Heat Exchanger,B - Important,2010,16,Monitor,In Date,8
+87,AST-10-00087,Separator,B - Important,2006,20,Maintenance Due,In Date,10
+88,AST-10-00088,Separator,B - Important,2007,19,Overdue,Overdue,10
+89,AST-07-00089,Pipeline Segment,A - Critical,2007,19,Maintenance Due,Overdue,7
+90,AST-02-00090,Separator,B - Important,2003,23,Good,In Date,2
+91,AST-09-00091,Forklift,B - Important,2026,0,Good,In Date,9
+92,AST-09-00092,Crane,A - Critical,2016,10,Overdue,Overdue,9
+93,AST-04-00093,Pressure Vessel,B - Important,2024,2,Monitor,Overdue,4
+94,AST-04-00094,Diesel Generator,B - Important,2018,8,Overdue,In Date,4
+95,AST-05-00095,Heat Exchanger,B - Important,2000,26,Maintenance Due,In Date,5
+96,AST-05-00096,Electrical Switchgear,C - General,2006,20,Good,In Date,5
+97,AST-07-00097,Diesel Generator,A - Critical,2011,15,Good,In Date,7
+98,AST-01-00098,Crane,A - Critical,2008,18,Monitor,In Date,1
+99,AST-03-00099,Forklift,A - Critical,2006,20,Good,Overdue,3
+100,AST-05-00100,Diesel Generator,A - Critical,2000,26,Good,In Date,5
+101,AST-04-00101,Storage Tank,C - General,2019,7,Good,In Date,4
+102,AST-08-00102,Centrifugal Pump,B - Important,2018,8,Good,In Date,8
+103,AST-02-00103,Gas Detector,A - Critical,1998,28,Maintenance Due,In Date,2
+104,AST-02-00104,Diesel Generator,B - Important,2023,3,Good,In Date,2
+105,AST-07-00105,Heat Exchanger,A - Critical,2010,16,Good,In Date,7
+106,AST-03-00106,Pressure Vessel,C - General,2011,15,Good,In Date,3
+107,AST-09-00107,Gas Detector,C - General,2009,17,Monitor,In Date,9
+108,AST-04-00108,Separator,A - Critical,1998,28,Overdue,Overdue,4
+109,AST-06-00109,Pipeline Segment,A - Critical,2016,10,Good,Overdue,6
+110,AST-05-00110,Heat Exchanger,B - Important,2020,6,Good,Overdue,5
+111,AST-08-00111,Control Valve,A - Critical,2023,3,Good,In Date,8
+112,AST-07-00112,Firewater Pump,A - Critical,2012,14,Good,Overdue,7
+113,AST-09-00113,Pipeline Segment,B - Important,2013,13,Monitor,In Date,9
+114,AST-08-00114,Forklift,B - Important,2006,20,Overdue,In Date,8
+115,AST-03-00115,Control Valve,A - Critical,2000,26,Good,In Date,3
+116,AST-06-00116,Diesel Generator,A - Critical,2009,17,Overdue,In Date,6
+117,AST-05-00117,Firewater Pump,A - Critical,2002,24,Maintenance Due,Not Applicable,5
+118,AST-01-00118,Forklift,A - Critical,2022,4,Good,In Date,1
+119,AST-10-00119,Pipeline Segment,C - General,2025,1,Good,Due within 30 days,10
+120,AST-06-00120,Firewater Pump,A - Critical,2020,6,Maintenance Due,In Date,6
+121,AST-05-00121,Centrifugal Pump,A - Critical,2009,17,Good,In Date,5
+122,AST-02-00122,Compressor,B - Important,2001,25,Good,In Date,2
+123,AST-05-00123,Heat Exchanger,C - General,2013,13,Maintenance Due,In Date,5
+124,AST-08-00124,Control Valve,C - General,2010,16,Good,In Date,8
+125,AST-08-00125,Gas Detector,A - Critical,2023,3,Maintenance Due,Due within 30 days,8
+126,AST-11-00126,Forklift,A - Critical,2008,18,Overdue,In Date,11
+127,AST-05-00127,Heat Exchanger,C - General,2007,19,Good,In Date,5
+128,AST-05-00128,Centrifugal Pump,B - Important,2003,23,Good,Due within 30 days,5
+129,AST-04-00129,Heat Exchanger,B - Important,2015,11,Maintenance Due,In Date,4
+130,AST-07-00130,Heat Exchanger,A - Critical,2018,8,Good,In Date,7
+131,AST-10-00131,Storage Tank,B - Important,2026,0,Good,In Date,10
+132,AST-05-00132,Firewater Pump,C - General,2017,9,Good,In Date,5
+133,AST-09-00133,Crane,A - Critical,2011,15,Good,In Date,9
+134,AST-08-00134,Electrical Switchgear,C - General,2010,16,Good,Overdue,8
+135,AST-11-00135,Truck,C - General,2024,2,Monitor,In Date,11
+136,AST-05-00136,Crane,A - Critical,2016,10,Good,In Date,5
+137,AST-08-00137,Gas Detector,B - Important,1998,28,Overdue,In Date,8
+138,AST-04-00138,Truck,A - Critical,1999,27,Good,In Date,4
+139,AST-07-00139,Truck,A - Critical,2019,7,Good,In Date,7
+140,AST-10-00140,Electrical Switchgear,B - Important,2025,1,Good,In Date,10
+141,AST-09-00141,Crane,B - Important,2009,17,Good,Overdue,9
+142,AST-05-00142,Firewater Pump,B - Important,2026,0,Good,Not Applicable,5
+143,AST-07-00143,Crane,B - Important,2007,19,Good,Due within 30 days,7
+144,AST-03-00144,Separator,A - Critical,2005,21,Overdue,Due within 30 days,3
+145,AST-11-00145,Truck,A - Critical,2014,12,Good,Not Applicable,11
+146,AST-11-00146,Pressure Vessel,A - Critical,2016,10,Monitor,In Date,11
+147,AST-06-00147,Forklift,B - Important,2015,11,Good,In Date,6
+148,AST-09-00148,Firewater Pump,B - Important,2006,20,Good,In Date,9
+149,AST-09-00149,Compressor,B - Important,2025,1,Good,In Date,9
+150,AST-11-00150,Crane,B - Important,2004,22,Good,Due within 30 days,11
+151,AST-11-00151,Forklift,A - Critical,2009,17,Monitor,Due within 30 days,11
+152,AST-01-00152,Heat Exchanger,C - General,2025,1,Maintenance Due,In Date,1
+153,AST-08-00153,Storage Tank,B - Important,2013,13,Overdue,In Date,8
+154,AST-07-00154,Heat Exchanger,B - Important,2020,6,Good,In Date,7
+155,AST-04-00155,Crane,A - Critical,2000,26,Overdue,Overdue,4
+156,AST-02-00156,Control Valve,B - Important,2009,17,Good,In Date,2
+157,AST-04-00157,Pressure Vessel,A - Critical,2017,9,Good,In Date,4
+158,AST-06-00158,Control Valve,C - General,2011,15,Good,In Date,6
+159,AST-01-00159,Gas Detector,B - Important,2014,12,Good,In Date,1
+160,AST-09-00160,Pressure Vessel,B - Important,2025,1,Good,In Date,9
+161,AST-10-00161,Electrical Switchgear,A - Critical,1999,27,Good,In Date,10
+162,AST-09-00162,Diesel Generator,A - Critical,2024,2,Good,Due within 30 days,9
+163,AST-11-00163,Gas Detector,C - General,2008,18,Overdue,In Date,11
+164,AST-04-00164,Control Valve,B - Important,2026,0,Good,Due within 30 days,4
+165,AST-04-00165,Separator,B - Important,2005,21,Maintenance Due,Due within 30 days,4
+166,AST-01-00166,Storage Tank,A - Critical,2002,24,Maintenance Due,In Date,1
+167,AST-09-00167,Crane,C - General,2009,17,Monitor,In Date,9
+168,AST-01-00168,Storage Tank,A - Critical,2020,6,Overdue, Overdue ,1
+169,AST-07-00169,Gas Detector,B - Important,2006,20,Maintenance Due,In Date,7
+170,AST-11-00170,Pipeline Segment,A - Critical,2002,24,Good,In Date,11
+171,AST-08-00171,Diesel Generator,A - Critical,2019,7,Good,In Date,8
+172,AST-02-00172,Pipeline Segment,A - Critical,2026,0,Good,In Date,2
+173,AST-01-00173,Storage Tank,A - Critical,2017,9,Good,In Date,1
+174,AST-07-00174,Forklift,A - Critical,2007,19,Good,Overdue,7
+175,AST-04-00175,Gas Detector,C - General,2018,8,Overdue,Overdue,4
+176,AST-02-00176,Pipeline Segment,A - Critical,2005,21,Maintenance Due,In Date,2
+177,AST-10-00177,Diesel Generator,B - Important,1999,27,Overdue,In Date,10
+178,AST-02-00178,Centrifugal Pump,B - Important,2005,21,Good,In Date,2
+179,AST-08-00179,Firewater Pump,B - Important,2002,24,Overdue,Due within 30 days,8
+180,AST-07-00180,Compressor,A - Critical,2018,8,Good,In Date,7
+181,AST-04-00181,Electrical Switchgear,C - General,2023,3,Good,In Date,4
+182,AST-09-00182,Pressure Vessel,C - General,2009,17,Monitor,In Date,9
+183,AST-02-00183,Truck,B - Important,2007,19,Good,In Date,2
+184,AST-10-00184,Firewater Pump,A - Critical,2005,21,Monitor,In Date,10
+185,AST-01-00185,Separator,A - Critical,2008,18,Good,In Date,1
+186,AST-02-00186,Truck,A - Critical,2020,6,Maintenance Due,In Date,2
+187,AST-01-00187,Centrifugal Pump,C - General,2013,13,Good,In Date,1
+188,AST-01-00188,Control Valve,C - General,2020,6,Good,In Date,1
+189,AST-05-00189,Firewater Pump,A - Critical,2023,3,Good,Due within 30 days,5
+190,AST-08-00190,Diesel Generator,B - Important,2026,0,Good,In Date,8
+191,AST-06-00191,Pressure Vessel,B - Important,2000,26,Good,In Date,6
+192,AST-04-00192,Electrical Switchgear,B - Important,2020,6,Good,In Date,4
+193,AST-01-00193,Firewater Pump,A - Critical,2015,11,Good,In Date,1
+194,AST-06-00194,Pipeline Segment,A - Critical,2024,2,Maintenance Due,In Date,6
+195,AST-11-00195,Diesel Generator,B - Important,2011,15,Overdue,Overdue,11
+196,AST-03-00196,Firewater Pump,A - Critical,2009,17,Overdue,Overdue,3
+197,AST-05-00197,Control Valve,A - Critical,2008,18,Maintenance Due,In Date,5
+198,AST-05-00198,Gas Detector,C - General,2024,2,Maintenance Due,Due within 30 days,5
+199,AST-08-00199,Pressure Vessel,B - Important,2024,2,Maintenance Due,Due within 30 days,8
+200,AST-04-00200,Crane,A - Critical,2018,8,Maintenance Due,In Date,4
+201,AST-03-00201,Crane,A - Critical,2009,17,Overdue,In Date,3
+202,AST-03-00202,Pressure Vessel,B - Important,2014,12,Maintenance Due,In Date,3
+203,AST-04-00203,Gas Detector,A - Critical,2022,4,Good,In Date,4
+204,AST-11-00204,Storage Tank,A - Critical,2011,15,Good,In Date,11
+205,AST-10-00205,Electrical Switchgear,B - Important,2003,23,Good,In Date,10
+206,AST-03-00206,Pipeline Segment,B - Important,2017,9,Monitor,Not Applicable,3
+207,AST-01-00207,Forklift,A - Critical,2015,11,Overdue,Due within 30 days,1
+208,AST-06-00208,Truck,B - Important,2023,3,Good,In Date,6
+209,AST-04-00209,Compressor,B - Important,2004,22,Overdue,Overdue,4
+210,AST-06-00210,Forklift,A - Critical,2002,24,Maintenance Due,Due within 30 days,6
+211,AST-03-00211,Storage Tank,B - Important,2022,4,Good,Not Applicable,3
+212,AST-09-00212,Compressor,B - Important,1998,28,Monitor,Not Applicable,9
+213,AST-03-00213,Truck,C - General,2023,3,Overdue,In Date,3
+214,AST-01-00214,Heat Exchanger,B - Important,2014,12,Maintenance Due,In Date,1
+215,AST-07-00215,Storage Tank,C - General,2013,13,Maintenance Due,In Date,7
+216,AST-09-00216,Diesel Generator,B - Important,2001,25,Good,Due within 30 days,9
+217,AST-06-00217,Forklift,A - Critical,2002,24,Overdue,In Date,6
+218,AST-10-00218,Pipeline Segment,A - Critical,2009,17,Maintenance Due,Due within 30 days,10
+219,AST-05-00219,Diesel Generator,B - Important,2011,15,Good,In Date,5
+220,AST-08-00220,Control Valve,A - Critical,2000,26,Maintenance Due,In Date,8
+221,AST-04-00221,Truck,B - Important,2003,23,Maintenance Due,In Date,4
+222,AST-01-00222,Gas Detector,A - Critical,2011,15,Maintenance Due,In Date,1
+223,AST-02-00223,Truck,C - General,2021,5,Maintenance Due,Due within 30 days,2
+224,AST-06-00224,Electrical Switchgear,A - Critical,2021,5,Monitor,In Date,6
+225,AST-01-00225,Compressor,B - Important,2000,26,Overdue,Overdue,1
+226,AST-04-00226,Control Valve,A - Critical,2025,1,Overdue,Overdue,4
+227,AST-09-00227,Gas Detector,B - Important,2013,13,Good,In Date,9
+228,AST-09-00228,Control Valve,B - Important,2026,0,Good,In Date,9
+229,AST-11-00229,Compressor,A - Critical,2014,12,Good,Due within 30 days,11
+230,AST-10-00230,Diesel Generator,B - Important,2022,4,Monitor,In Date,10
+231,AST-06-00231,Firewater Pump,A - Critical,2015,11,Maintenance Due,In Date,6
+232,AST-05-00232,Control Valve,A - Critical,2013,13,Good,In Date,5
+233,AST-08-00233,Heat Exchanger,B - Important,2022,4,Maintenance Due,In Date,8
+234,AST-10-00234,Centrifugal Pump,C - General,2014,12,Maintenance Due,Not Applicable,10
+235,AST-09-00235,Heat Exchanger,A - Critical,2001,25,Monitor,In Date,9
+236,AST-02-00236,Compressor,C - General,2016,10,Good,In Date,2
+237,AST-06-00237,Gas Detector,C - General,2023,3,Good,In Date,6
+238,AST-11-00238,Diesel Generator,B - Important,2001,25,Good,In Date,11
+239,AST-04-00239,Gas Detector,B - Important,2014,12,Good,In Date,4
+240,AST-09-00240,Firewater Pump,B - Important,2002,24,Good,Due within 30 days,9
+241,AST-02-00241,Pipeline Segment,B - Important,2001,25,Overdue,Due within 30 days,2
+242,AST-08-00242,Gas Detector,B - Important,2013,13,Monitor,Overdue,8
+243,AST-07-00243,Crane,B - Important,2013,13,Good,In Date,7
+244,AST-02-00244,Storage Tank,C - General,2024,2,Good,Due within 30 days,2
+245,AST-08-00245,Centrifugal Pump,B - Important,1998,28,Good,In Date,8
+246,AST-04-00246,Separator,B - Important,2023,3,Maintenance Due,Overdue,4
+247,AST-01-00247,Centrifugal Pump,C - General,2008,18,Overdue,Overdue,1
+248,AST-05-00248,Truck,B - Important,2004,22,Maintenance Due,In Date,5
+249,AST-08-00249,Truck,B - Important,2024,2,Good,Overdue,8
+250,AST-07-00250,Electrical Switchgear,A - Critical,2020,6,Good,In Date,7
+251,AST-11-00251,Firewater Pump,B - Important,1999,27,Overdue,In Date,11
+252,AST-04-00252,Heat Exchanger,A - Critical,2013,13,Maintenance Due,Due within 30 days,4
+253,AST-04-00253,Separator,B - Important,2026,0,Good,In Date,4
+254,AST-01-00254,Separator,A - Critical,2005,21,Good,In Date,1
+255,AST-02-00255,Compressor,A - Critical,2024,2,Monitor,In Date,2
+256,AST-09-00256,Centrifugal Pump,A - Critical,2018,8,Good,In Date,9
+257,AST-04-00257,Centrifugal Pump,B - Important,2000,26,Monitor,In Date,4
+258,AST-04-00258,Compressor,B - Important,2024,2,Good, Due within 30 days ,4
+259,AST-01-00259,Crane,A - Critical,2013,13,Good,Overdue,1
+260,AST-04-00260,Pressure Vessel,B - Important,2003,23,Maintenance Due,In Date,4
+261,AST-11-00261,Pressure Vessel,B - Important,2007,19,Good,In Date,11
+262,AST-08-00262,Pressure Vessel,C - General,2005,21,Maintenance Due,In Date,8
+263,AST-03-00263,Centrifugal Pump,B - Important,2009,17,Maintenance Due,In Date,3
+264,AST-02-00264,Compressor,B - Important,2026,0,Good,In Date,2
+265,AST-10-00265,Separator,A - Critical,1998,28,Maintenance Due,In Date,10
+266,AST-08-00266,Crane,B - Important,2003,23,Maintenance Due,Due within 30 days,8
+267,AST-08-00267,Electrical Switchgear,A - Critical,2002,24,Good,Overdue,8
+268,AST-07-00268,Pressure Vessel,B - Important,2002,24,Overdue,Overdue,7
+269,AST-09-00269,Centrifugal Pump,A - Critical,2010,16,Maintenance Due,Not Applicable,9
+270,AST-07-00270,Diesel Generator,B - Important,2006,20,Good,Due within 30 days,7
+271,AST-05-00271,Compressor,B - Important,2008,18,Good,Overdue,5
+272,AST-10-00272,Pipeline Segment,A - Critical,2010,16,Good,Overdue,10
+273,AST-06-00273,Pressure Vessel,B - Important,2017,9,Good,In Date,6
+274,AST-01-00274,Centrifugal Pump,A - Critical,2022,4,Good,Due within 30 days,1
+275,AST-07-00275,Diesel Generator,B - Important,2004,22,Monitor,In Date,7
+276,AST-01-00276,Electrical Switchgear,B - Important,2017,9,Monitor,In Date,1
+277,AST-11-00277,Crane,B - Important,2019,7,Good,In Date,11
+278,AST-06-00278,Truck,B - Important,2018,8,Overdue,Due within 30 days,6
+279,AST-07-00279,Pipeline Segment,A - Critical,2001,25,Good,In Date,7
+280,AST-07-00280,Control Valve,A - Critical,2008,18,Good,Due within 30 days,7
+281,AST-07-00281,Crane,C - General,2000,26,Overdue,In Date,7
+282,AST-04-00282,Storage Tank,B - Important,2004,22,Maintenance Due,In Date,4
+283,AST-01-00283,Control Valve,A - Critical,2002,24,Overdue,Overdue,1
+284,AST-04-00284,Electrical Switchgear,B - Important,2015,11,Good,Due within 30 days,4
+285,AST-07-00285,Heat Exchanger,A - Critical,2008,18,Good,In Date,7
+286,AST-07-00286,Pressure Vessel,B - Important,2007,19,Overdue,Overdue,7
+287,AST-02-00287,Centrifugal Pump,B - Important,2013,13,Good,In Date,2
+288,AST-04-00288,Heat Exchanger,A - Critical,2012,14,Good,Due within 30 days,4
+289,AST-08-00289,Heat Exchanger,C - General,2007,19,Good,Due within 30 days,8
+290,AST-01-00290,Firewater Pump,B - Important,2016,10,Good,In Date,1
+291,AST-04-00291,Control Valve,B - Important,2018,8,Overdue,In Date,4
+292,AST-10-00292,Heat Exchanger,B - Important,2000,26,overdue,Overdue,10
+293,AST-03-00293,Firewater Pump,B - Important,2015,11,Good,Due within 30 days,3
+294,AST-03-00294,Separator,C - General,2025,1,Maintenance Due,In Date,3
+295,AST-10-00295,Centrifugal Pump,B - Important,2025,1,Good,Overdue,10
+296,AST-03-00296,Electrical Switchgear,A - Critical,2003,23,Overdue,In Date,3
+297,AST-09-00297,Truck,C - General,2004,22,Good,Due within 30 days,9
+298,AST-05-00298,Separator,B - Important,2001,25,Good,In Date,5
+299,AST-06-00299,Compressor,B - Important,2015,11,Good,In Date,6
+300,AST-01-00300,Firewater Pump,A - Critical,2000,26,Overdue,Overdue,1
+301,AST-01-00301,Storage Tank,C - General,2003,23,Overdue,In Date,1
+302,AST-01-00302,Gas Detector,A - Critical,2009,17,Good,In Date,1
+303,AST-04-00303,Control Valve,C - General,2006,20,Overdue,Overdue,4
+304,AST-01-00304,Heat Exchanger,B - Important,2004,22,Good,Overdue,1
+305,AST-06-00305,Forklift,C - General,2004,22,Overdue,Due within 30 days,6
+306,AST-04-00306,Centrifugal Pump,C - General,2005,21,Maintenance Due,Overdue,4
+307,AST-03-00307,Diesel Generator,B - Important,2008,18,Good,In Date,3
+308,AST-01-00308,Crane,B - Important,2013,13,Monitor,In Date,1
+309,AST-04-00309,Crane,C - General,2021,5,Overdue,Overdue,4
+310,AST-04-00310,Truck,A - Critical,2016,10,Good,In Date,4
+311,AST-09-00311,Pipeline Segment,B - Important,2020,6,Good,In Date,9
+312,AST-07-00312,Gas Detector,A - Critical,1999,27,Good,Due within 30 days,7
+313,AST-07-00313,Truck,B - Important,2021,5,Good,In Date,7
+314,AST-01-00314,Pipeline Segment,C - General,2017,9,Good,Due within 30 days,1
+315,AST-02-00315,Firewater Pump,C - General,2018,8,Monitor,In Date,2
+316,AST-11-00316,Control Valve,B - Important,2009,17,Good,In Date,11
+317,AST-09-00317,Gas Detector,B - Important,2006,20,Good,Overdue,9
+318,AST-08-00318,Heat Exchanger,B - Important,2008,18,Overdue,Overdue,8
+319,AST-07-00319,Diesel Generator,B - Important,2017,9,Good,In Date,7
+320,AST-04-00320,Gas Detector,B - Important,2022,4,Good,In Date,4
+321,AST-06-00321,Firewater Pump,B - Important,2006,20,Monitor,Due within 30 days,6
+322,AST-02-00322,Compressor,A - Critical,1998,28,Maintenance Due,Not Applicable,2
+323,AST-10-00323,Crane,C - General,2007,19,Monitor,Overdue,10
+324,AST-08-00324,Firewater Pump,A - Critical,2004,22,Monitor,In Date,8
+325,AST-07-00325,Compressor,B - Important,2008,18,Overdue,Due within 30 days,7
+326,AST-01-00326,Forklift,B - Important,2005,21,Maintenance Due,In Date,1
+327,AST-09-00327,Diesel Generator,A - Critical,2022,4,Monitor,In Date,9
+328,AST-04-00328,Pipeline Segment,A - Critical,2000,26,Good,In Date,4
+329,AST-05-00329,Centrifugal Pump,A - Critical,2018,8,Monitor,Overdue,5
+330,AST-05-00330,Gas Detector,A - Critical,2000,26,Good,Due within 30 days,5
+331,AST-05-00331,Firewater Pump,A - Critical,2018,8,Good,In Date,5
+332,AST-06-00332,Separator,C - General,2002,24,Good,In Date,6
+333,AST-07-00333,Firewater Pump,C - General,2019,7,Good,In Date,7
+334,AST-08-00334,Heat Exchanger,A - Critical,2009,17,Monitor,In Date,8
+335,AST-04-00335,Pressure Vessel,B - Important,2004,22,Good,In Date,4
+336,AST-10-00336,Pipeline Segment,B - Important,2000,26,Good,In Date,10
+337,AST-11-00337,Heat Exchanger,B - Important,2019,7,Good,Not Applicable,11
+338,AST-01-00338,Firewater Pump,B - Important,2010,16,Overdue,Due within 30 days,1
+339,AST-01-00339,Diesel Generator,B - Important,1998,28,Overdue,Overdue,1
+340,AST-05-00340,Diesel Generator,A - Critical,2012,14,Overdue,In Date,5
+341,AST-02-00341,Centrifugal Pump,B - Important,2024,2,Good,In Date,2
+342,AST-11-00342,Storage Tank,A - Critical,2006,20,Overdue,Not Applicable,11
+343,AST-05-00343,Electrical Switchgear,A - Critical,2003,23,Good,In Date,5
+344,AST-06-00344,Forklift,C - General,2026,0,Overdue,Overdue,6
+345,AST-01-00345,Storage Tank,A - Critical,2016,10,Maintenance Due,Not Applicable,1
+346,AST-08-00346,Compressor,B - Important,2024,2,Good,In Date,8
+347,AST-09-00347,Truck,B - Important,2021,5,Monitor,In Date,9
+348,AST-04-00348,Crane,A - Critical,2024,2,Maintenance Due,Overdue,4
+349,AST-09-00349,Compressor,A - Critical,2012,14,Good,In Date,9
+350,AST-02-00350,Gas Detector,B - Important,2018,8,Overdue,Overdue,2
+351,AST-04-00351,Pipeline Segment,A - Critical,2016,10,Good,Overdue,4
+352,AST-05-00352,Truck,C - General,2020,6,Good,In Date,5
+353,AST-01-00353,Diesel Generator,A - Critical,2021,5,Good,In Date,1
+354,AST-03-00354,Electrical Switchgear,A - Critical,2020,6,Overdue,Overdue,3
+355,AST-04-00355,Storage Tank,B - Important,2002,24,Good,In Date,4
+356,AST-09-00356,Compressor,A - Critical,1998,28,Good,In Date,9
+357,AST-01-00357,Centrifugal Pump,A - Critical,2018,8,Good,Due within 30 days,1
+358,AST-06-00358,Pressure Vessel,C - General,2021,5,Monitor,Overdue,6
+359,AST-05-00359,Diesel Generator,A - Critical,2001,25,Good, Overdue ,5
+360,AST-10-00360,Pipeline Segment,A - Critical,2026,0,Good,Due within 30 days,10
+361,AST-10-00361,Pipeline Segment,C - General,2017,9,Maintenance Due,Due within 30 days,10
+362,AST-05-00362,Pressure Vessel,C - General,2005,21,Overdue,In Date,5
+363,AST-09-00363,Firewater Pump,C - General,2022,4,Good,In Date,9
+364,AST-06-00364,Control Valve,C - General,2024,2,Good,Overdue,6
+365,AST-03-00365,Firewater Pump,C - General,1998,28,Good,In Date,3
+366,AST-05-00366,Firewater Pump,B - Important,2007,19,Overdue,Due within 30 days,5
+367,AST-03-00367,Compressor,A - Critical,2013,13,Monitor,In Date,3
+368,AST-11-00368,Separator,A - Critical,2011,15,Maintenance Due,In Date,11
+369,AST-04-00369,Firewater Pump,A - Critical,2016,10,Good,In Date,4
+370,AST-05-00370,Forklift,A - Critical,2007,19,Maintenance Due,Not Applicable,5
+371,AST-09-00371,Control Valve,C - General,2013,13,Overdue,In Date,9
+372,AST-03-00372,Forklift,C - General,2019,7,Good,In Date,3
+373,AST-04-00373,Gas Detector,B - Important,2019,7,Good,In Date,4
+374,AST-03-00374,Compressor,A - Critical,2008,18,Overdue,Due within 30 days,3
+375,AST-09-00375,Heat Exchanger,C - General,2017,9,Good,In Date,9
+376,AST-04-00376,Control Valve,A - Critical,2022,4,Good,In Date,4
+377,AST-01-00377,Gas Detector,A - Critical,2012,14,Maintenance Due,In Date,1
+378,AST-06-00378,Forklift,A - Critical,2009,17,Good,In Date,6
+379,AST-10-00379,Pipeline Segment,A - Critical,2024,2,Good,In Date,10
+380,AST-04-00380,Centrifugal Pump,A - Critical,2005,21,Good,In Date,4
+381,AST-08-00381,Centrifugal Pump,B - Important,2023,3,Good,In Date,8
+382,AST-04-00382,Electrical Switchgear,B - Important,2006,20,Overdue,In Date,4
+383,AST-06-00383,Truck,B - Important,2005,21,Overdue,In Date,6
+384,AST-05-00384,Compressor,C - General,2026,0,Maintenance Due,Not Applicable,5
+385,AST-04-00385,Forklift,B - Important,2013,13,Good,In Date,4
+386,AST-05-00386,Storage Tank,C - General,2005,21,Good,In Date,5
+387,AST-08-00387,Diesel Generator,A - Critical,1999,27,Good,Due within 30 days,8
+388,AST-07-00388,Pressure Vessel,A - Critical,2010,16,Good,Due within 30 days,7
+389,AST-05-00389,Storage Tank,C - General,1999,27,Good,In Date,5
+390,AST-01-00390,Electrical Switchgear,C - General,2017,9,Good,In Date,1
+391,AST-11-00391,Forklift,C - General,2018,8,Maintenance Due,In Date,11
+392,AST-09-00392,Storage Tank,C - General,2008,18,Overdue,In Date,9
+393,AST-09-00393,Control Valve,B - Important,2011,15,Overdue,Due within 30 days,9
+394,AST-07-00394,Centrifugal Pump,A - Critical,2000,26,Overdue,In Date,7
+395,AST-06-00395,Diesel Generator,A - Critical,2001,25,Overdue,In Date,6
+396,AST-03-00396,Separator,A - Critical,2001,25,Good,In Date,3
+397,AST-01-00397,Forklift,B - Important,2015,11,Good,In Date,1
+398,AST-10-00398,Crane,A - Critical,2025,1,Good,Due within 30 days,10
+399,AST-08-00399,Diesel Generator,B - Important,2003,23,Overdue,In Date,8
+400,AST-10-00400,Separator,A - Critical,2003,23,Overdue,Due within 30 days,10
+401,AST-09-00401,Storage Tank,C - General,2023,3,Good,Overdue,9
+402,AST-11-00402,Diesel Generator,A - Critical,2021,5,Good,Overdue,11
+403,AST-10-00403,Separator,C - General,2011,15,Good,In Date,10
+404,AST-03-00404,Heat Exchanger,A - Critical,2002,24,Good,In Date,3
+405,AST-03-00405,Pipeline Segment,C - General,2017,9,Good,In Date,3
+406,AST-11-00406,Pipeline Segment,A - Critical,2016,10,Good,Due within 30 days,11
+407,AST-03-00407,Crane,C - General,2019,7,Good,Due within 30 days,3
+408,AST-08-00408,Crane,B - Important,2002,24,Overdue,Due within 30 days,8
+409,AST-01-00409,Control Valve,B - Important,2007,19,Good,Not Applicable,1
+410,AST-06-00410,Heat Exchanger,B - Important,2021,5,Overdue,In Date,6
+411,AST-10-00411,Diesel Generator,C - General,2017,9,Maintenance Due,Due within 30 days,10
+412,AST-07-00412,Control Valve,A - Critical,2005,21,Good,Due within 30 days,7
+413,AST-08-00413,Separator,B - Important,2009,17,Maintenance Due,In Date,8
+414,AST-06-00414,Compressor,A - Critical,2017,9,Overdue,In Date,6
+415,AST-02-00415,Forklift,A - Critical,2012,14,Good,In Date,2
+416,AST-08-00416,Pipeline Segment,B - Important,2009,17,Good,In Date,8
+417,AST-01-00417,Control Valve,A - Critical,2012,14,Overdue,Overdue,1
+418,AST-07-00418,Diesel Generator,A - Critical,2012,14,Good,Overdue,7
+419,AST-06-00419,Diesel Generator,A - Critical,2017,9,Maintenance Due,In Date,6
+420,AST-06-00420,Separator,C - General,2005,21,Overdue,Overdue,6
+421,AST-01-00421,Gas Detector,C - General,2002,24,Good,Overdue,1
+422,AST-01-00422,Heat Exchanger,A - Critical,2025,1,Overdue,Overdue,1
+423,AST-03-00423,Forklift,C - General,2003,23,Maintenance Due,Due within 30 days,3
+424,AST-01-00424,Truck,B - Important,2008,18,Overdue,Overdue,1
+425,AST-11-00425,Storage Tank,A - Critical,2022,4,Good,Due within 30 days,11
+426,AST-01-00426,Crane,A - Critical,2022,4,Good,In Date,1
+427,AST-05-00427,Firewater Pump,B - Important,2010,16,Good,Due within 30 days,5
+428,AST-04-00428,Heat Exchanger,B - Important,2009,17,Good,In Date,4
+429,AST-08-00429,Separator,B - Important,2017,9,Good,In Date,8
+430,AST-01-00430,Storage Tank,C - General,2022,4,Maintenance Due,In Date,1
+431,AST-08-00431,Gas Detector,B - Important,2001,25,Overdue,In Date,8
+432,AST-08-00432,Centrifugal Pump,C - General,2013,13,Good,In Date,8
+433,AST-03-00433,Control Valve,A - Critical,2016,10,Good,In Date,3
+434,AST-05-00434,Heat Exchanger,A - Critical,1998,28,Maintenance Due,In Date,5
+435,AST-07-00435,Compressor,C - General,2006,20,Overdue,Overdue,7
+436,AST-03-00436,Control Valve,A - Critical,2003,23,Overdue,Due within 30 days,3
+437,AST-07-00437,Diesel Generator,B - Important,2023,3,Good,Due within 30 days,7
+438,AST-06-00438,Truck,B - Important,2007,19,Maintenance Due,In Date,6
+439,AST-08-00439,Gas Detector,B - Important,2001,25,Good,In Date,8
+440,AST-11-00440,Control Valve,B - Important,2007,19,Good,Due within 30 days,11
+441,AST-04-00441,Firewater Pump,C - General,2022,4,Good,In Date,4
+442,AST-09-00442,Pressure Vessel,A - Critical,2023,3,Maintenance Due,In Date,9
+443,AST-09-00443,Heat Exchanger,B - Important,2014,12,Good,In Date,9
+444,AST-04-00444,Forklift,C - General,2001,25,Maintenance Due,In Date,4
+445,AST-01-00445,Pipeline Segment,C - General,2013,13,Good,In Date,1
+446,AST-07-00446,Pipeline Segment,B - Important,2003,23,Good,In Date,7
+447,AST-07-00447,Electrical Switchgear,B - Important,2024,2,Maintenance Due,Overdue,7
+448,AST-09-00448,Pipeline Segment,a - critical,2016,10,Good,Not Applicable,9
+449,AST-09-00449,Pressure Vessel,A - Critical,2014,12,Good,In Date,9
+450,AST-06-00450,Diesel Generator,A - Critical,2011,15,Good,In Date,6
+451,AST-04-00451,Control Valve,A - Critical,2004,22,Overdue,In Date,4
+452,AST-08-00452,Truck,C - General,2022,4,Maintenance Due,In Date,8
+453,AST-03-00453,Storage Tank,C - General,2005,21,Maintenance Due,In Date,3
+454,AST-09-00454,Truck,C - General,2001,25,Overdue,In Date,9
+455,AST-09-00455,Forklift,A - Critical,2007,19,Overdue,Overdue,9
+456,AST-11-00456,Compressor,C - General,2004,22,Maintenance Due,Due within 30 days,11
+457,AST-04-00457,Compressor,B - Important,2026,0,Good,In Date,4
+458,AST-07-00458,Centrifugal Pump,B - Important,2015,11,Maintenance Due,In Date,7
+459,AST-04-00459,Electrical Switchgear,B - Important,2020,6,Good,Due within 30 days,4
+460,AST-07-00460,Electrical Switchgear,A - Critical,2015,11,Monitor,In Date,7
+461,AST-04-00461,Pipeline Segment,A - Critical,2023,3,Good,In Date,4
+462,AST-10-00462,Compressor,B - Important,2026,0,Good,Not Applicable,10
+463,AST-11-00463,Pressure Vessel,A - Critical,2006,20,Good,In Date,11
+464,AST-02-00464,Crane,B - Important,2011,15,Monitor,In Date,2
+465,AST-09-00465,Gas Detector,B - Important,2005,21,Maintenance Due,Overdue,9
+466,AST-07-00466,Centrifugal Pump,B - Important,2014,12,Good,In Date,7
+467,AST-02-00467,Compressor,A - Critical,2001,25,Monitor,In Date,2
+468,AST-01-00468,Storage Tank,B - Important,2017,9,Good,In Date,1
+469,AST-09-00469,Electrical Switchgear,A - Critical,2011,15,Good,In Date,9
+470,AST-04-00470,Gas Detector,a - critical,2014,12,Good,Overdue,4
+471,AST-04-00471,Centrifugal Pump,B - Important,2013,13,Maintenance Due,In Date,4
+472,AST-03-00472,Pipeline Segment,B - Important,2024,2,Good,In Date,3
+473,AST-11-00473,Control Valve,B - Important,2021,5,Good,In Date,11
+474,AST-03-00474,Control Valve,A - Critical,2014,12,Overdue,Overdue,3
+475,AST-06-00475,Firewater Pump,B - Important,2012,14,Overdue,In Date,6
+476,AST-04-00476,Firewater Pump,B - Important,2013,13,Overdue,Overdue,4
+477,AST-02-00477,Pipeline Segment,C - General,2023,3,Good,In Date,2
+478,AST-09-00478,Storage Tank,B - Important,2005,21,Maintenance Due,In Date,9
+479,AST-04-00479,Pipeline Segment,A - Critical,1998,28,Monitor,In Date,4
+480,AST-03-00480,Firewater Pump,A - Critical,2018,8,Monitor,Overdue,3
+481,AST-11-00481,Firewater Pump,B - Important,2009,17,Good,In Date,11
+482,AST-02-00482,Pressure Vessel,A - Critical,2019,7,Good,In Date,2
+483,AST-10-00483,Diesel Generator,A - Critical,2011,15,Maintenance Due,In Date,10
+484,AST-10-00484,Storage Tank,A - Critical,2020,6,Overdue,In Date,10
+485,AST-09-00485,Gas Detector,A - Critical,2006,20,Maintenance Due,Not Applicable,9
+486,AST-07-00486,Truck,C - General,2023,3,Good,Not Applicable,7
+487,AST-10-00487,Forklift,C - General,2011,15,Good,Due within 30 days,10
+488,AST-05-00488,Forklift,C - General,2002,24,Overdue,In Date,5
+489,AST-09-00489,Electrical Switchgear,B - Important,2017,9,Good,In Date,9
+490,AST-11-00490,Diesel Generator,B - Important,2016,10,Monitor,In Date,11
+491,AST-04-00491,Diesel Generator,A - Critical,2012,14,Good,In Date,4
+492,AST-01-00492,Control Valve,C - General,2007,19,Overdue,In Date,1
+493,AST-07-00493,Heat Exchanger,A - Critical,2001,25,Good,Overdue,7
+494,AST-04-00494,Pressure Vessel,B - Important,2010,16,Good,In Date,4
+495,AST-07-00495,Truck,B - Important,2016,10,Monitor,Due within 30 days,7
+496,AST-04-00496,Crane,B - Important,2020,6,Good,In Date,4
+497,AST-07-00497,Control Valve,C - General,2019,7,Good,In Date,7
+498,AST-04-00498,Control Valve,B - Important,2005,21,Monitor,In Date,4
+499,AST-03-00499,Compressor,A - Critical,2006,20,Good,Overdue,3
+500,AST-02-00500,Pipeline Segment,A - Critical,2008,18,Good,In Date,2
+501,AST-09-00501,Storage Tank,B - Important,2006,20,Good,In Date,9
+502,AST-04-00502,Crane,A - Critical,2004,22,Good,Overdue,4
+503,AST-01-00503,Firewater Pump,A - Critical,2000,26,Maintenance Due,In Date,1
+504,AST-10-00504,Separator,A - Critical,2010,16,Good,In Date,10
+505,AST-07-00505,Heat Exchanger,B - Important,2006,20,Good,In Date,7
+506,AST-06-00506,Crane,B - Important,2005,21,Good,In Date,6
+507,AST-11-00507,Compressor,B - Important,2024,2,Good,In Date,11
+508,AST-02-00508,Gas Detector,A - Critical,1998,28,Good,Due within 30 days,2
+509,AST-06-00509,Centrifugal Pump,B - Important,2005,21,Overdue,Due within 30 days,6
+510,AST-06-00510,Storage Tank,B - Important,2010,16,Maintenance Due,Overdue,6
+511,AST-01-00511,Diesel Generator,A - Critical,2020,6,Good,In Date,1
+512,AST-06-00512,Gas Detector,A - Critical,2026,0,Good,Due within 30 days,6
+513,AST-03-00513,Control Valve,B - Important,2017,9,Good,In Date,3
+514,AST-08-00514,Control Valve,A - Critical,2013,13,Overdue,Overdue,8
+515,AST-09-00515,Electrical Switchgear,B - Important,2013,13,Good,In Date,9
+516,AST-06-00516,Centrifugal Pump,B - Important,2000,26,Good,In Date,6
+517,AST-08-00517,Forklift,B - Important,2005,21,Overdue,In Date,8
+518,AST-10-00518,Compressor,C - General,2012,14,Maintenance Due,In Date,10
+519,AST-07-00519,Pressure Vessel,A - Critical,2004,22,Monitor,Due within 30 days,7
+520,AST-04-00520,Compressor,B - Important,2014,12,Good,In Date,4
+521,AST-08-00521,Gas Detector,C - General,2015,11,Good,Not Applicable,8
+522,AST-07-00522,Compressor,B - Important,2004,22,Good,In Date,7
+523,AST-10-00523,Pipeline Segment,B - Important,2021,5,Overdue,Overdue,10
+524,AST-10-00524,Gas Detector,A - Critical,2005,21,Good,In Date,10
+525,AST-04-00525,Pressure Vessel,B - Important,2012,14,Good,Overdue,4
+526,AST-10-00526,Diesel Generator,B - Important,2016,10,Monitor,In Date,10
+527,AST-11-00527,Gas Detector,B - Important,2009,17,Good,Overdue,11
+528,AST-06-00528,Firewater Pump,A - Critical,2021,5,Monitor,In Date,6
+529,AST-03-00529,Electrical Switchgear,B - Important,2021,5,Good,In Date,3
+530,AST-09-00530,Diesel Generator,B - Important,2009,17,Good,In Date,9
+531,AST-02-00531,Control Valve,A - Critical,1998,28,Good,In Date,2
+532,AST-04-00532,Pressure Vessel,B - Important,1999,27,Good,Due within 30 days,4
+533,AST-03-00533,Control Valve,A - Critical,2007,19,Good,Overdue,3
+534,AST-09-00534,Diesel Generator,A - Critical,2009,17,Good,In Date,9
+535,AST-09-00535,Control Valve,A - Critical,2008,18,Overdue,Overdue,9
+536,AST-02-00536,Heat Exchanger,B - Important,2026,0,Good,In Date,2
+537,AST-04-00537,Forklift,B - Important,2018,8,Good,In Date,4
+538,AST-11-00538,Pipeline Segment,B - Important,2009,17,Good,Not Applicable,11
+539,AST-06-00539,Pressure Vessel,B - Important,2015,11,Good,Not Applicable,6
+540,AST-10-00540,Pipeline Segment,C - General,2025,1,Good,Overdue,10
+541,AST-03-00541,Forklift,B - Important,2007,19,Good,In Date,3
+542,AST-04-00542,Heat Exchanger,A - Critical,2004,22,Maintenance Due,In Date,4
+543,AST-10-00543,Forklift,B - Important,2007,19,Good,In Date,10
+544,AST-05-00544,Forklift,C - General,2013,13,Good,In Date,5
+545,AST-04-00545,Electrical Switchgear,A - Critical,2011,15,Maintenance Due,In Date,4
+546,AST-09-00546,Heat Exchanger,B - Important,2004,22,Monitor,Due within 30 days,9
+547,AST-06-00547,Gas Detector,A - Critical,2018,8,Overdue,Due within 30 days,6
+548,AST-02-00548,Storage Tank,C - General,2026,0,Good,In Date,2
+549,AST-07-00549,Truck,B - Important,2001,25,Maintenance Due,Overdue,7
+550,AST-04-00550,Crane,B - Important,2000,26,Good,Due within 30 days,4
+551,AST-07-00551,Storage Tank,A - Critical,2005,21,Good,In Date,7
+552,AST-04-00552,Control Valve,B - Important,2020,6,Good,Overdue,4
+553,AST-04-00553,Firewater Pump,C - General,2008,18,Maintenance Due,Due within 30 days,4
+554,AST-08-00554,Truck,B - Important,2025,1,Good,In Date,8
+555,AST-01-00555,Pressure Vessel,A - Critical,2026,0,Good,In Date,1
+556,AST-06-00556,Gas Detector,A - Critical,2003,23,Monitor,Not Applicable,6
+557,AST-10-00557,Firewater Pump,B - Important,2007,19,Maintenance Due,In Date,10
+558,AST-04-00558,Pressure Vessel,B - Important,2001,25,Overdue,Overdue,4
+559,AST-05-00559,Forklift,B - Important,2022,4,Good,In Date,5
+560,AST-03-00560,Diesel Generator,C - General,2004,22,Good,In Date,3
+561,AST-10-00561,Control Valve,A - Critical,1999,27,Good,In Date,10
+562,AST-05-00562,Truck,B - Important,2001,25,Good,Overdue,5
+563,AST-08-00563,Control Valve,A - Critical,2022,4,Good,In Date,8
+564,AST-10-00564,Forklift,B - Important,1998,28,Overdue,Overdue,10
+565,AST-01-00565,Heat Exchanger,C - General,2011,15,Good,In Date,1
+566,AST-05-00566,Firewater Pump,A - Critical,2012,14,Overdue,Overdue,5
+567,AST-04-00567,Storage Tank,B - Important,2006,20,Good,In Date,4
+568,AST-09-00568,Heat Exchanger,C - General,2017,9,Good,In Date,9
+569,AST-08-00569,Firewater Pump,C - General,1998,28,Overdue,Overdue,8
+570,AST-11-00570,Electrical Switchgear,A - Critical,2017,9,Overdue,Overdue,11
+571,AST-07-00571,Truck,B - Important,2019,7,Good,In Date,7
+572,AST-01-00572,Gas Detector,B - Important,2018,8,Maintenance Due,In Date,1
+573,AST-10-00573,Diesel Generator,A - Critical,2016,10,Monitor,In Date,10
+574,AST-01-00574,Crane,C - General,2011,15,Overdue,Due within 30 days,1
+575,AST-05-00575,Gas Detector,B - Important,1998,28,Overdue,In Date,5
+576,AST-02-00576,Heat Exchanger,B - Important,2016,10,Overdue,In Date,2
+577,AST-05-00577,Forklift,A - Critical,2000,26,Overdue,Overdue,5
+578,AST-05-00578,Centrifugal Pump,B - Important,2010,16,Good,In Date,5
+579,AST-02-00579,Pipeline Segment,B - Important,2005,21,Maintenance Due,In Date,2
+580,AST-09-00580,Pressure Vessel,B - Important,2002,24,Overdue,Overdue,9
+581,AST-02-00581,Gas Detector,C - General,2001,25,Good,In Date,2
+582,AST-06-00582,Truck,B - Important,1998,28,Good,In Date,6
+583,AST-04-00583,Compressor,B - Important,2014,12,Maintenance Due,Not Applicable,4
+584,AST-09-00584,Diesel Generator,B - Important,2016,10,Good,In Date,9
+585,AST-02-00585,Crane,A - Critical,2026,0,Overdue,Overdue,2
+586,AST-04-00586,Storage Tank,C - General,2002,24,Good,In Date,4
+587,AST-11-00587,Electrical Switchgear,A - Critical,2026,0,Good,In Date,11
+588,AST-06-00588,Pressure Vessel,C - General,2007,19,Maintenance Due,In Date,6
+589,AST-06-00589,Compressor,B - Important,2004,22,Good,Due within 30 days,6
+590,AST-04-00590,Separator,A - Critical,2018,8,Good,Due within 30 days,4
+591,AST-08-00591,Centrifugal Pump,B - Important,2012,14,Good,Due within 30 days,8
+592,AST-06-00592,Electrical Switchgear,B - Important,2022,4,Monitor,In Date,6
+593,AST-07-00593,Pressure Vessel,A - Critical,2021,5,Good,In Date,7
+594,AST-05-00594,Electrical Switchgear,a - critical,2025,1,Good,In Date,5
+595,AST-10-00595,Pressure Vessel,A - Critical,1999,27,Maintenance Due,In Date,10
+596,AST-07-00596,Control Valve,B - Important,1999,27,Maintenance Due,In Date,7
+597,AST-06-00597,Storage Tank,b - important,2025,1,Maintenance Due,Not Applicable,6
+598,AST-06-00598,Control Valve,B - Important,2015,11,Good,Due within 30 days,6
+599,AST-02-00599,Separator,C - General,2012,14,Overdue,Overdue,2
+600,AST-09-00600,Pressure Vessel,C - General,2000,26,Good,Due within 30 days,9

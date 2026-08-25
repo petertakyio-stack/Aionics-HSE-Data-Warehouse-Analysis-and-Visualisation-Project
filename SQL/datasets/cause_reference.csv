@@ -1,0 +1,31 @@
+cause_id,immediate_cause_category,immediate_cause,root_cause_category,root_cause,human_factor_flag,equipment_factor_flag,management_system_factor_flag
+1,Human Factors,Loss of attention,Human Factors,Fatigue / distraction,1,0,0
+2,Human Factors,Improper positioning,Human Factors,Inadequate hazard awareness,1,0,0
+3,Human Factors,Incorrect tool use,Competency,Skill / competency gap,1,0,1
+4,Procedure,Procedure not followed,Management System,Weak procedure compliance,1,0,1
+5,Procedure,Procedure unclear,Management System,Procedure quality deficiency,0,0,1
+6,Work Control,Permit control failure,Management System,Permit-to-work weakness,1,0,1
+7,Work Control,Isolation inadequate,Management System,LOTO / isolation control weakness,1,1,1
+8,Equipment,Mechanical failure,EQUIPMENT INTEGRITY,Ageing / degraded equipment,0,1,0
+9,Equipment,Seal or gasket failure,Equipment Integrity,Preventive maintenance deficiency,0,1,1
+10,Equipment,Instrument malfunction,Equipment Integrity,Calibration / inspection gap,0,1,1
+11,Equipment,Safety device unavailable,Equipment Integrity,Critical equipment assurance failure,0,1,1
+12,Lifting,Dropped object,PLANNING,Lifting plan / control deficiency,1,1,1
+13,Vehicle,Unsafe driving,Human Factors,Speed / defensive driving failure,1,0,1
+14,Vehicle,Vehicle mechanical defect,Equipment Integrity,Fleet maintenance deficiency,0,1,1
+15,Housekeeping,Slip / trip hazard,Workplace Conditions,Poor housekeeping,1,0,1
+16,PPE,PPE not used correctly,Management System,PPE compliance weakness,1,0,1
+17,Environment,Adverse weather,Environmental Conditions,Weather exposure,0,0,0
+18,Communication,Poor handover,Management System,Shift handover weakness,1,0,1
+19,Communication,Signal misunderstanding,Human Factors,Communication breakdown,1,0,1
+20, planning ,Task risk not fully assessed,Management System,Risk assessment deficiency,1,0,1
+21, supervision ,Inadequate supervision,Management System,Supervisory control weakness,1,0,1
+22,Training,Training not current,Competency,Training assurance gap,1,0,1
+23,Process,Unexpected pressure release,Process Safety,Process hazard control failure,0,1,1
+24,Process,Loss of containment,Equipment Integrity,Containment integrity failure,0,1,1
+25, chemical ,Chemical splash / exposure,Planning,Chemical handling control deficiency,1,0,1
+26,Marine,Unexpected vessel movement,Environmental Conditions,Marine motion / sea-state exposure,0,0,0
+27,Ergonomic,Manual handling overload,Human Factors,Poor ergonomic task design,1,0,1
+28,Construction,Unstable work surface,Planning,Construction planning deficiency,1,1,1
+29,Emergency,Delayed emergency response,Management System,Emergency preparedness gap,0,0,1
+30,Unknown,Cause under investigation,Unknown,Root cause pending,0,0,0
