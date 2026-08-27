@@ -1,398 +1,199 @@
-# Aionics HSE Excel Analysis and Validation
+# Aionics Solutions HSE Excel Analysis & Validation
 
-## Overview
+## Project Overview
 
-This workbook is the **Excel analysis layer** of the **Aionics Solutions HSE Data Warehouse Analysis and Visualisation Project**. It extends the SQL Server data warehouse by using Microsoft Excel and Power Query to validate warehouse outputs, perform exploratory HSE analysis, investigate relationships across operational dimensions, and prepare management-level summaries before the final reporting layer is developed in Power BI.
+This project demonstrates the use of **Microsoft Excel for Health, Safety and Environment (HSE) data analysis, validation, investigation, and management reporting**.
 
-The underlying HSE dataset is **fictional** and was created for learning and portfolio purposes.
+The workbook contains **14,996 fictional HSE event records** and uses **Power Query, PivotTables, Excel formulas, matrix analysis, Pareto analysis, conditional formatting, and management summary tables** to examine patterns across incidents, sites, personnel, equipment, work activities, causes, and time.
 
-**Workbook:** [`Aionics_HSE_Analysis_and_Validation.xlsx`](Aionics_HSE_Analysis_and_Validation.xlsx)
+The objective of this Excel project was not simply to produce charts, but to demonstrate how Excel can be used to:
 
-**Full project repository:**  
-https://github.com/petertakyio-stack/Aionics-HSE-Data-Warehouse-Analysis-and-Visualisation-Project
+- Prepare analytical datasets with Power Query
+- Validate HSE data before analysis
+- Perform structured exploratory analysis
+- Investigate relationships between operational and HSE variables
+- Identify recurring root causes
+- Apply Pareto analysis for prioritisation
+- Compare HSE performance across operating sites
+- Produce management-level analytical summaries
+- Generate findings that can support further HSE investigation and decision-making
+
+> **Note:** Aionics Solutions and the HSE dataset used in this project are fictional and were created solely for learning and portfolio development.
+---
+
+## Excel Workbook
+
+📊 [`Aionics_HSE_Analysis_and_Validation.xlsx`](./Aionics_HSE_Analysis_and_Validation.xlsx)
 
 ---
 
-## Role of Excel in the Project
+# Data Preparation with Power Query
 
-Excel is intentionally used as an **analysis and validation layer**, rather than as a duplicate of the final Power BI dashboard.
+Power Query was used to prepare the analytical datasets before performing the Excel analysis.
 
-The overall project workflow is:
+Key transformations included:
 
-```text
-CSV Source Data
-      ↓
-SQL Server
-Bronze → Silver → Gold
-      ↓
-Excel
-Validation → Power Query → Exploratory Analysis
-      ↓
-Power BI
-Interactive KPI Reporting and Visualisation
-```
-
-Within this workflow:
-
-- **SQL Server** handles data ingestion, cleansing, standardisation, dimensional modelling, and creation of analytics-ready Gold views.
-- **Excel** validates SQL results, enriches the analytical data with Power Query, performs exploratory analysis, Pareto analysis, investigation matrices, and site-level management analysis.
-- **Power BI** serves as the final interactive reporting and visualisation layer.
-
----
-
-## Data Source
-
-The workbook consumes the Gold-layer fact and dimension views created in SQL Server:
-
-```text
-gold.fact_event_records
-gold.dim_calendar
-gold.dim_sites
-gold.dim_personnel
-gold.dim_equipment
-gold.dim_work_activities
-gold.dim_cause_reference
-```
-
-The Gold layer follows a star-schema design centred on `gold.fact_event_records`.
-
-Excel retains the individual Gold datasets and also uses Power Query to create analysis-ready versions and a merged HSE dataset for cross-dimensional analysis.
-
----
-
-## Workbook Architecture
-
-The workbook contains **20 worksheets**, organised into analysis, Power Query, and source-data layers.
-
-### Primary Analysis Worksheets
-
-| Worksheet | Purpose |
-|---|---|
-| **Data Validation Summary** | Reconciles key HSE measures between SQL Server and Excel |
-| **Management Analysis Table** | Provides site-level management measures covering event frequency, safety, environmental, financial, and operational impact |
-| **Pivot Summary** | Provides broad exploratory analysis across event, calendar, cause, site, personnel, equipment, and work-activity dimensions |
-| **Matrix Investigation Tables** | Uses cross-tab analysis to investigate relationships between HSE variables |
-| **Root Cause - Pareto Analysis** | Ranks root causes by event frequency and tracks cumulative contribution |
-| **Merged HSE Table** | Flat analytical dataset created by combining the event fact data with relevant dimension attributes |
-
-### Power Query Worksheets
-
-```text
-pq_event_records
-pq_calendar
-pq_sites
-pq_personnel
-pq_equipment
-pq_work_activities
-pq_cause_reference
-```
-
-### Gold Source Worksheets
-
-```text
-gold.fact_event_records
-gold.dim_calendar
-gold.dim_sites
-gold.dim_personnel
-gold.dim_equipment
-gold.dim_work_activities
-gold.dim_cause_reference
-```
-
----
-
-## 1. Data Validation and Reconciliation
-
-The **Data Validation Summary** independently recalculates major HSE measures in Excel and compares them with SQL Server results.
-
-The purpose is to confirm that data imported and transformed in Excel remains consistent with the SQL Gold layer.
-
-| Metric | Validated Result |
-|---|---:|
-| Total Events | 14,996 |
-| Recordable Events | 2,426 |
-| Lost Time Injuries | 377 |
-| Fatalities | 35 |
-| Days Lost | 11,542 |
-| Restricted Days | 11,967 |
-| Spill Volume | 8,644,254.30 L |
-| Incident Cost | $656,979,214.95 |
-| Downtime | 156,425.41 hours |
-| Regulator Reportable Events | 2,539 |
-
-The workbook calculates the difference between SQL and Excel results and assigns a **Pass/Fail reconciliation status**.
-
-> A negligible floating-point precision difference occurs in the downtime reconciliation. The variance is approximately `3.2 × 10^-10` hours and is documented in the workbook as a rounding/precision effect rather than a material data difference.
-
----
-
-## 2. Power Query Data Preparation
-
-Power Query is used to prepare the SQL Gold data for Excel analysis without repeating the core cleansing already completed in SQL Server.
-
-Key Excel-side preparation includes:
-
-- Confirming appropriate data types
-- Preserving meaningful `NULL` values rather than replacing missing values indiscriminately with zero
-- Creating analysis-friendly age groupings
+- Reviewing and assigning appropriate data types
+- Preserving meaningful blank and NULL values instead of automatically replacing them with zero
+- Rounding `years_experience` to two decimal places
+- Creating readable employee age groups
 - Creating equipment age groups
-- Creating HSE factor profiles
-- Creating risk/permit analytical profiles
-- Combining dimension attributes with event records for cross-dimensional analysis
+- Preserving HSE abbreviations during text formatting
+- Creating analytical factor profiles
+- Creating risk and permit profiles for work activities
+- Merging event records with related analytical tables
+- Expanding relevant attributes from the calendar, site, personnel, equipment, work-activity, and cause-reference datasets
+- Creating a consolidated **Merged HSE Table** for cross-dimensional analysis
 
-The resulting **Merged HSE Table** contains event-level measures together with attributes such as:
-
-```text
-Date and calendar attributes
-Site and location attributes
-Personnel and employment attributes
-Equipment characteristics
-Work activity and shift information
-Immediate and root cause information
-HSE factor profiles
-Event type and severity
-Recordable and lost-time flags
-Fatalities and lost/restricted days
-Spill volume
-Incident cost
-Downtime
-Regulatory-reporting status
-```
-
-This flattened analytical table supports PivotTable analysis without altering the underlying SQL star schema.
+The merged dataset made it possible to analyse event measures alongside descriptive attributes
 
 ---
 
-## 3. Exploratory HSE Analysis
+## Data Validation
 
-The **Pivot Summary** provides a structured exploratory review of the HSE dataset.
+Key HSE measures were reconciled before analysis.
 
-The workbook analyses event frequency across areas such as:
+<p align="center">
+  <img src="docs/Data%20Validation%20Summary.png" alt="Data Validation Summary" width="100%">
+</p>
 
-### Event Summary
+The validation process helped identify and correct data-type and rounding issues before analysis.
+The major HSE measures reconciled successfully between the reference results and Excel.
 
-- Event type
-- Severity classification
-- Process safety tier
+A negligible precision difference was observed for downtime despite both values displaying as **156,425.41 hours**. This was identified as a rounding/floating-point precision issue rather than a material difference in the underlying data.
 
-### Calendar Summary
+The validation stage was particularly useful for identifying and correcting inappropriate data-type and rounding transformations before proceeding with the main analysis.
 
-- Year
-- Quarter
-- Month
-- Day of week
-
-### Cause Analysis
-
-- Root cause category
-- Immediate cause category
-- HSE factor profile
-
-### Site Summary
-
-- Site
-- Country
-- Facility type
-- Operation type
-
-### Personnel Summary
-
-- Employment type
-- Contractor company
-- Department
-- Employee age group
-
-### Equipment Summary
-
-- Equipment criticality
-- Equipment age group
-- Asset type
-
-### Work Activity Summary
-
-- Activity category
-- Work type
-- Shift
-- Risk/permit profile
-
-The workbook contains **34 PivotTables** across the exploratory and investigation analysis areas.
 
 ---
 
-## 4. Management Analysis Table
+## Exploratory Analysis
 
-The **Management Analysis Table** provides a consolidated site-level view of key HSE outcomes.
+PivotTables were used to explore HSE events across:
 
-Measures include:
+- Event type, severity, and process safety tier
+- Year, quarter, month, and day
+- Root and immediate causes
+- Sites, countries, and operation types
+- Employment type, department, and age group
+- Equipment criticality, age, and asset type
+- Work activity, work type, shift, and permit/risk profile
 
-| Measure | Purpose |
-|---|---|
-| **Event Count** | Overall number of HSE events |
-| **Recordable Incidents** | Number of recordable HSE events |
-| **Recordable %** | Recordable incidents as a percentage of all events |
-| **Regulatory Reportable Incidents** | Events requiring regulatory reporting |
-| **Fatalities** | Total fatalities |
-| **LTIs** | Lost Time Injuries |
-| **Days Lost** | Total workdays lost |
-| **Restricted Days** | Total restricted-work days |
-| **Downtime Hours** | Operational downtime resulting from events |
-| **Downtime per Event** | Average downtime associated with each event |
-| **Spill Volume (L)** | Environmental spill/release volume |
-| **Incident Cost (USD)** | Total estimated incident cost |
-| **Incident Cost per Event (USD)** | Average incident cost per HSE event |
-
-This table allows management to compare sites across **event frequency, injury severity, environmental impact, operational disruption, regulatory significance, and financial impact**.
+<p align="center">
+  <img src="docs/Pivot%20Tables.png" alt="Pivot Table Summary" width="100%">
+</p>
 
 ---
 
-## 5. Investigation Matrices
+## Matrix Investigation
 
-The **Matrix Investigation Tables** move beyond simple one-dimensional event counts and examine relationships between HSE variables.
+Cross-tab PivotTables were used to investigate relationships such as:
 
-The cross-tab analysis includes combinations involving:
+- Event Type × Site
+- Event Type × Employee Age Group
+- Event Type × Equipment Criticality
+- Asset Type × Equipment Criticality
+- Training Status × Severity
+- Shift × Equipment Criticality
 
-- Event type and operating site
-- Event type and personnel age grouping
-- Event type and equipment criticality
-- Equipment characteristics and criticality
-- Training status and event severity
-- Shift-related event patterns
-
-These investigation matrices are designed to identify relationships that may require deeper analysis rather than simply ranking categories by frequency.
-
----
-
-## 6. Root Cause Pareto Analysis
-
-A dedicated **Root Cause - Pareto Analysis** ranks specific root causes from highest to lowest event count.
-
-The analysis contains:
-
-```text
-Root Cause
-Event Count
-% of Events
-Cumulative %
-```
-
-The cumulative percentage is used to identify the root causes that collectively account for the majority of recorded HSE events.
-
-The workbook also includes a Pareto chart combining:
-
-- **Event Count** as columns
-- **Cumulative %** as a line
-- An **80% reference threshold** for prioritisation
-
-Examples of the highest-frequency root causes in the dataset include:
-
-| Root Cause | Event Count | Share of Events |
-|---|---:|---:|
-| Lifting Plan / Control Deficiency | 805 | 5.37% |
-| Fleet Maintenance Deficiency | 787 | 5.25% |
-| Training Assurance Gap | 730 | 4.87% |
-| Construction Planning Deficiency | 636 | 4.24% |
-| LOTO / Isolation Control Weakness | 630 | 4.20% |
-
-The Pareto analysis is used as a **prioritisation tool**, not as proof that frequency alone represents overall HSE risk. Severity, fatalities, cost, downtime, and environmental impact must also be considered.
+<p align="center">
+  <img src="docs/Matrix%20Investigation%20Tables.png" alt="Matrix Investigation Tables" width="100%">
+</p>
 
 ---
 
-## Key HSE Measures Used
+## Root Cause Pareto Analysis
 
-The Excel analysis uses the following measures from the fact dataset:
+A Pareto analysis was used to rank root causes by frequency and cumulative contribution.
 
-```text
-Event Count
-Recordable Events
-Lost Time Injuries
-Fatality Count
-Days Lost
-Restricted Days
-Spill Volume (L)
-Incident Cost (USD)
-Downtime Hours
-Regulator Reportable Events
-```
+<p align="center">
+  <img src="docs/Pareto%20Analysis.png" alt="Root Cause Pareto Analysis" width="100%">
+</p>
 
-Additional management calculations include:
+The highest-frequency root causes included:
 
-```text
-Recordable %
-Downtime per Event
-Incident Cost per Event
-% of Events
-Cumulative %
-```
+- Lifting Plan / Control Deficiency — 805 events
+- Fleet Maintenance Deficiency — 787
+- Training Assurance Gap — 730
+- Construction Planning Deficiency — 636
+- LOTO / Isolation Control Weakness — 630
 
-> Exposure-based safety indicators such as TRIR and LTIFR are not calculated because the current dataset does not contain workforce exposure hours. These metrics should not be estimated without a valid exposure denominator.
+An important finding from the Pareto analysis is that the events are **not dominated by only a very small number of root causes**.
+
+The top five root causes collectively account for only **23.93%** of recorded events.
+
+The cumulative percentage does not exceed approximately 80% until **Weak Procedure Compliance**, the 22nd ranked root cause, where the cumulative contribution reaches **80.79%**.
+
+This indicates a relatively **distributed root-cause profile** rather than a classic situation in which a small number of causes account for most events.
+
+From an HSE-management perspective, this suggests that improvement efforts may require a broader programme addressing several recurring control weaknesses rather than focusing on only two or three causes.
 
 ---
 
-## Refresh Workflow
+## Management Analysis
 
-Where the SQL connection is available, the workbook can be refreshed when the underlying warehouse changes.
+A site-level management table was created to compare:
 
-```text
-Update SQL Gold Views
-        ↓
-Refresh Excel SQL Source Data
-        ↓
-Refresh Power Query
-        ↓
-Refresh PivotTables / Analysis
-        ↓
-Review Validation Results
-```
-
-A user opening the workbook without access to the original SQL Server connection can still review the saved workbook results, but refreshing the connected data requires access to the relevant SQL Server database and connection configuration.
+<p align="center">
+  <img src="docs/Management%20Analysis%20Tables.png" alt="Management Analysis Table" width="100%">
+</p>
 
 ---
 
-## Skills Demonstrated
+## Key Analytical Findings
 
-This Excel component demonstrates practical experience with:
+- **Near Miss** was the most common event type with **3,856 events**.
+- **Unsafe Conditions** were also prominent with **2,650 events**.
+- **Management System** was the largest root-cause category with **4,096 events**.
+- **Deepwater Alpha FPSO** recorded the highest total event count at **1,720**.
+- **Delta Drilling Site** had the highest recordable-event percentage at **17.49%**.
+- **Deepwater Bravo Platform** recorded the highest fatality count at **6** and the highest total incident cost at approximately **$89.27 million**.
+- **Western Gas Processing Plant** recorded the highest spill volume at approximately **1.19 million litres** and the highest LTI count at **43**.
+- Day and night event volumes were almost identical: **7,451 vs 7,545**.
+- The Pareto analysis showed that HSE root causes were **widely distributed**, requiring roughly 22 causes to exceed 80% cumulative contribution.
+- Several dimensions contain substantial **Unknown** categories, particularly personnel and equipment, which should be considered when interpreting results.
 
-- Microsoft Excel
+> These findings identify patterns in the fictional dataset and should not be interpreted as proof of causation.
+
+---
+
+## Excel Skills Demonstrated
+
 - Power Query
-- SQL-to-Excel data integration
-- Data validation and reconciliation
-- Structured tables
+- Data transformation
+- Query merging and expansion
 - PivotTables
-- Cross-tab / matrix analysis
+- Matrix analysis
+- Data validation and reconciliation
+- Excel formulas
+- Percentage calculations
 - Pareto analysis
 - Combination charts
-- Percentage and cumulative analysis
+- Conditional formatting
 - HSE management reporting
 - Exploratory data analysis
-- Data-type management
-- Missing-value interpretation
-- Analytical data preparation
-- Dimensional data analysis
-- Management-level KPI calculations
 
 ---
 
-## Project Value
+## Project Structure
 
-The workbook demonstrates how Excel can be used effectively between a SQL data warehouse and a Power BI reporting layer.
-
-Rather than duplicating Power BI, Excel is used to:
-
-1. **Validate** the SQL warehouse outputs.
-2. **Explore** the HSE data through PivotTables.
-3. **Investigate** relationships across dimensions.
-4. **Prioritise** root causes through Pareto analysis.
-5. **Summarise** site-level HSE performance for management review.
-6. **Identify** patterns and questions that can be carried forward into Power BI.
-
----
-
-## File
-
-[`Aionics_HSE_Analysis_and_Validation.xlsx`](Aionics_HSE_Analysis_and_Validation.xlsx)
+```text
+EXCEL/
+│
+├── Aionics_HSE_Analysis_and_Validation.xlsx
+├── README.md
+└── docs/
+    ├── Data Validation Summary.png
+    ├── Management Analysis Tables.png
+    ├── Matrix Investigation Tables.png
+    ├── Pareto Analysis.png
+    └── Pivot Tables.png
+```
 
 ---
 
-## Note
+## Disclaimer
 
-**Aionics Solutions** and the HSE dataset used in this project are fictional. The project was created solely for educational, analytical, and portfolio-development purposes.
+**Aionics Solutions** and all HSE data used in this project are fictional.
+
+The project was developed solely for **educational and portfolio purposes**.
