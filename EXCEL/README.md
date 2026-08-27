@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates the use of **Microsoft Excel for Health, Safety and Environment (HSE) data analysis, validation, investigation, and management reporting**.
+This project demonstrates the use of **Microsoft Excel for Health, Safety and Environment (HSE) data analysis, validation, investigation, and management reporting**. The gold layer from the SQL data warehouse built was loaded into excel using power query.
 
 The workbook contains **14,996 fictional HSE event records** and uses **Power Query, PivotTables, Excel formulas, matrix analysis, Pareto analysis, conditional formatting, and management summary tables** to examine patterns across incidents, sites, personnel, equipment, work activities, causes, and time.
 
