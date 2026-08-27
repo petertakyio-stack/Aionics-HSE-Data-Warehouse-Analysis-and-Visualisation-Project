@@ -159,19 +159,25 @@ A site-level management table was created to compare:
 
 ## Excel Skills Demonstrated
 
-- Power Query
-- Data transformation
-- Query merging and expansion
-- PivotTables
-- Matrix analysis
-- Data validation and reconciliation
-- Excel formulas
-- Percentage calculations
-- Pareto analysis
-- Combination charts
-- Conditional formatting
-- HSE management reporting
-- Exploratory data analysis
+<p align="left">
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-Data%20Analysis-217346?logo=microsoftexcel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power%20Query-Data%20Preparation-2E7D32" />
+  <img src="https://img.shields.io/badge/Data%20Transformation-Analysis%20Ready-0A66C2" />
+  <img src="https://img.shields.io/badge/Data%20Types-Validation%20%26%20Formatting-6F42C1" />
+  <img src="https://img.shields.io/badge/Query%20Merging-Data%20Integration-D4A017" />
+  <img src="https://img.shields.io/badge/Missing%20Values-Data%20Quality-28A745" />
+  <img src="https://img.shields.io/badge/PivotTables-Exploratory%20Analysis-00758F" />
+  <img src="https://img.shields.io/badge/Matrix%20Analysis-Cross%20Tab%20Investigation-5B6B73" />
+  <img src="https://img.shields.io/badge/Data%20Reconciliation-Validation%20Checks-198754" />
+  <img src="https://img.shields.io/badge/Excel%20Formulas-Analytical%20Calculations-F2C811" />
+  <img src="https://img.shields.io/badge/Conditional%20Formatting-Visual%20Analysis-CF6F1C" />
+  <img src="https://img.shields.io/badge/Pareto%20Analysis-Root%20Cause%20Prioritisation-8E44AD" />
+  <img src="https://img.shields.io/badge/Cumulative%20Analysis-Percentage%20Tracking-1F618D" />
+  <img src="https://img.shields.io/badge/Combo%20Charts-Analytical%20Visualisation-B03A2E" />
+  <img src="https://img.shields.io/badge/Management%20Analysis-HSE%20Reporting-117864" />
+  <img src="https://img.shields.io/badge/HSE%20Analytics-Exploratory%20Analysis-5B6B73" />
+  <img src="https://img.shields.io/badge/Analytical%20Reporting-Insight%20Generation-34495E" />
+</p>
 
 ---
 
